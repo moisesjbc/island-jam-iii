@@ -18,7 +18,6 @@ public class QuickTimeEvent : MonoBehaviour {
 	void Start () {
 		Debug.Log ("actions");
 		Debug.Log (actions.Length);
-		StartQuickTimeEvents ();
 	}
 
 	void Update () {
@@ -36,20 +35,21 @@ public class QuickTimeEvent : MonoBehaviour {
 	}
 
 
-	void StartQuickTimeEvents() {
+	public void Activate(Rompible rompible) {
+		this.rompible = rompible;
 		StartCoroutine ("QuickimeEventsCoroutine");
 	}
 
-	void StopQuickTimeEvents() {
+	public void Deactivate() {
 		StopCoroutine ("QuickimeEventsCoroutine");
 	}
 
 	void RestartQuickTimeEvents() {
-		StopQuickTimeEvents ();
+		Deactivate ();
 		if (currentAction != null) {
 			currentAction.Deactivate ();
 		}
-		StartQuickTimeEvents ();
+		Activate (this.rompible);
 	}
 
 	IEnumerator QuickimeEventsCoroutine() {

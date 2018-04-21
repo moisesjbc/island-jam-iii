@@ -17,7 +17,6 @@ public class Rompible : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		damage += damagePerSecond * Time.deltaTime;
-		Debug.Log (damage);
 		damageLabel.text = damage.ToString ("#.00");
 	}
 
