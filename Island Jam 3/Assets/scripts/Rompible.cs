@@ -7,7 +7,7 @@ public class Rompible : MonoBehaviour {
 	private float damage = 0.0f;
 	public float damagePerSecond = 5.0f;
 
-	public Text damageLabel;
+	public DamageBar damageBar;
 
 	public GameController gameController;
 
@@ -30,7 +30,7 @@ public class Rompible : MonoBehaviour {
 			PrepareDisaster ();
 		} else if (currentState == State.BREAKING) {
 			damage += damagePerSecond * Time.deltaTime;
-			damageLabel.text = damage.ToString ("#.00");
+			damageBar.SetValue (damage);
 			if (damage > 100.0f) {
 				gameController.GameOver ();
 			} else if (damage < 0.0f) {

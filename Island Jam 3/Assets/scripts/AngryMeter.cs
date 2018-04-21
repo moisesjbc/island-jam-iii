@@ -27,6 +27,6 @@ public class AngryMeter : MonoBehaviour {
 		if (angryValue < 0.0f) {
 			angryValue = 0.0f;
 		}
-		GetComponent<Slider> ().value = angryValue / 100.0f;
+		GetComponent<DamageBar> ().SetValue(angryValue);
 	}
 }
