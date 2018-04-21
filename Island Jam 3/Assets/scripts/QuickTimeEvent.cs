@@ -23,11 +23,9 @@ public class QuickTimeEvent : MonoBehaviour {
 	void Update () {
 		if (currentAction != null) {
 			if (Input.GetKeyDown (currentKey)) {
-				Debug.Log ("Good!");
 				rompible.ReduceDamage (10.0f);
 				RestartQuickTimeEvents ();
 			} else if (Input.anyKeyDown) {
-				Debug.Log ("Bad!");
 				rompible.IncreaseDamage (5.0f);
 				RestartQuickTimeEvents ();
 			}
@@ -36,26 +34,25 @@ public class QuickTimeEvent : MonoBehaviour {
 
 
 	public void Activate(Rompible rompible) {
+		Deactivate ();
 		this.rompible = rompible;
 		StartCoroutine ("QuickimeEventsCoroutine");
 	}
 
 	public void Deactivate() {
+		if (currentAction != null) {
+			currentAction.Deactivate ();
+		}
 		StopCoroutine ("QuickimeEventsCoroutine");
 	}
 
 	void RestartQuickTimeEvents() {
 		Deactivate ();
-		if (currentAction != null) {
-			currentAction.Deactivate ();
-		}
 		Activate (this.rompible);
 	}
 
 	IEnumerator QuickimeEventsCoroutine() {
 		while (true) {
-			yield return new WaitForSeconds (timeoutBetweenEvents);
-
 			int randomIndex = Random.Range (0, 3);
 			currentAction = actions [randomIndex];
 			currentKey = keys [randomIndex];
