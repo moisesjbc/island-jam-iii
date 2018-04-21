@@ -195,6 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planePrefab: {fileID: 114844902121041694, guid: 8a9b6b1bc720c174a8b52fb571a67f73,
     type: 2}
+  angryMeter: {fileID: 431267949}
   minY: -2
   maxY: 2
   minTimeout: 1
@@ -551,11 +552,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4784882467150808, guid: 8a9b6b1bc720c174a8b52fb571a67f73, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4784882467150808, guid: 8a9b6b1bc720c174a8b52fb571a67f73, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4784882467150808, guid: 8a9b6b1bc720c174a8b52fb571a67f73, type: 2}
       propertyPath: m_RootOrder
