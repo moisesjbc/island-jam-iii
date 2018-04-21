@@ -25,7 +25,7 @@ public class QuickTimeEvent : MonoBehaviour {
 		if (currentAction != null) {
 			if (Input.GetKeyDown (currentKey)) {
 				Debug.Log ("Good!");
-				rompible.ReduceDamage (5.0f);
+				rompible.ReduceDamage (10.0f);
 				RestartQuickTimeEvents ();
 			} else if (Input.anyKeyDown) {
 				Debug.Log ("Bad!");
