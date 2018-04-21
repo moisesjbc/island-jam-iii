@@ -165,6 +165,7 @@ MonoBehaviour:
   - {fileID: 899240376}
   - {fileID: 2129650961}
   keys: 11010000120100001301000014010000
+  rompible: {fileID: 1856048399}
 --- !u!1 &899240374
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,8 +426,9 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1856048397}
+  - component: {fileID: 1856048400}
   - component: {fileID: 1856048398}
+  - component: {fileID: 1856048399}
   m_Layer: 0
   m_Name: Printer
   m_TagString: Untagged
@@ -434,19 +436,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1856048397
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1856048396}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.35, y: -1.95, z: 0.16463386}
-  m_LocalScale: {x: 0.5335117, y: 0.5335117, z: 0.5335117}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1856048398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -491,6 +480,36 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1856048399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1856048396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d15bf3275a77e4e81ea2bf249bd9aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePerSecond: 5
+--- !u!224 &1856048400
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1856048396}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.16463386}
+  m_LocalScale: {x: 0.5335117, y: 0.5335117, z: 0.5335117}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.37, y: 1.93}
+  m_SizeDelta: {x: 2.47, y: 2.04}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1858080484
 GameObject:
   m_ObjectHideFlags: 0

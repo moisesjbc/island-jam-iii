@@ -12,6 +12,8 @@ public class QuickTimeEvent : MonoBehaviour {
 	private FlashingAction currentAction = null;
 	private KeyCode currentKey;
 
+	public Rompible rompible = null;
+
 	// Use this for initialization
 	void Start () {
 		Debug.Log ("actions");
@@ -23,9 +25,11 @@ public class QuickTimeEvent : MonoBehaviour {
 		if (currentAction != null) {
 			if (Input.GetKeyDown (currentKey)) {
 				Debug.Log ("Good!");
+				rompible.ReduceDamage (5.0f);
 				RestartQuickTimeEvents ();
 			} else if (Input.anyKeyDown) {
 				Debug.Log ("Bad!");
+				rompible.IncreaseDamage (5.0f);
 				RestartQuickTimeEvents ();
 			}
 		}
