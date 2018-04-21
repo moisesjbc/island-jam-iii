@@ -9,15 +9,20 @@ public class Rompible : MonoBehaviour {
 
 	public Text damageLabel;
 
+	public GameController gameController;
+
 	// Use this for initialization
 	void Start () {
-		
+		damage = 0.0f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		damage += damagePerSecond * Time.deltaTime;
 		damageLabel.text = damage.ToString ("#.00");
+		if (damage > 100.0f) {
+			gameController.GameOver ();
+		}
 	}
 
 	public void ReduceDamage(float damageDelta = 5.0f){
@@ -29,8 +34,5 @@ public class Rompible : MonoBehaviour {
 
 	public void IncreaseDamage(float damageDelta = 5.0f){
 		damage += damageDelta;
-		if (damage > 100.0f) {
-			Debug.LogError ("Has muerto!");
-		}
 	}
 }
