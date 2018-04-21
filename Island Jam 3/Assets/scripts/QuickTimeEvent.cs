@@ -54,6 +54,9 @@ public class QuickTimeEvent : MonoBehaviour {
 	IEnumerator QuickimeEventsCoroutine() {
 		while (true) {
 			int randomIndex = Random.Range (0, 3);
+			if (keys [randomIndex] == currentKey) {
+				randomIndex = (randomIndex + 1) % 4;
+			}
 			currentAction = actions [randomIndex];
 			currentKey = keys [randomIndex];
 			currentAction.Activate ();
