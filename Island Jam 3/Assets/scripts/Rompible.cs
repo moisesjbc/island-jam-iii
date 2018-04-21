@@ -11,17 +11,36 @@ public class Rompible : MonoBehaviour {
 
 	public GameController gameController;
 
+	enum State {HEALTHY, PREPARING_DISASTER, BREAKING}
+	State currentState = State.HEALTHY;
+	public float timeToBreak = 0.0f;
+
 	// Use this for initialization
 	void Start () {
-		damage = 0.0f;
+	}
+
+	void PrepareDisaster () {
+		currentState = State.PREPARING_DISASTER;
+		timeToBreak = Random.Range (1.0f, 3.0f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		damage += damagePerSecond * Time.deltaTime;
-		damageLabel.text = damage.ToString ("#.00");
-		if (damage > 100.0f) {
-			gameController.GameOver ();
+		if (currentState == State.HEALTHY) {
+			PrepareDisaster ();
+		} else if (currentState == State.BREAKING) {
+			damage += damagePerSecond * Time.deltaTime;
+			damageLabel.text = damage.ToString ("#.00");
+			if (damage > 100.0f) {
+				gameController.GameOver ();
+			} else if (damage < 0.0f) {
+				currentState = State.HEALTHY;
+			}
+		} else {
+			timeToBreak -= Time.deltaTime;
+			if (timeToBreak < 0.0f) {
+				currentState = State.BREAKING;
+			}
 		}
 	}
 
