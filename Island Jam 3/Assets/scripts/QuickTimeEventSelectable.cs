@@ -9,10 +9,13 @@ public class QuickTimeEventSelectable : MonoBehaviour {
 	private bool selected = false;
 	public Camera camera;
 
+	public Sprite selectedSprite;
+	public Sprite nonSelectedSprite;
+
 
 	// Use this for initialization
 	void Start () {
-		
+		GetComponent<SpriteRenderer> ().sprite = nonSelectedSprite;
 	}
 
 	// Update is called once per frame
@@ -27,14 +30,14 @@ public class QuickTimeEventSelectable : MonoBehaviour {
 
 			if (!bounds.Contains (mousePosition)) {
 				selected = false;
-				GetComponent<SpriteRenderer> ().color = Color.white;
+				GetComponent<SpriteRenderer> ().sprite = nonSelectedSprite;
 			}
 		}
 	}
 
 	void OnMouseDown() {
 		selected = true;
-		GetComponent<SpriteRenderer> ().color = Color.cyan;
+		GetComponent<SpriteRenderer> ().sprite = selectedSprite;
 		quickTimeEvent.Activate (rompible);
 	}
 }
