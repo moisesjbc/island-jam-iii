@@ -476,6 +476,8 @@ MonoBehaviour:
   planePrefab: {fileID: 114844902121041694, guid: 8a9b6b1bc720c174a8b52fb571a67f73,
     type: 2}
   angryMeter: {fileID: 1317709910}
+  axePrefab: {fileID: 114930649081813730, guid: 55aa998fc873bbd4eafdf797a26a831d,
+    type: 2}
   minY: -2
   maxY: 2
   minTimeout: 1
@@ -741,6 +743,12 @@ Prefab:
       propertyPath: planeGenerator
       value: 
       objectReference: {fileID: 305117828}
+    - target: {fileID: 114844902121041694, guid: 8a9b6b1bc720c174a8b52fb571a67f73,
+        type: 2}
+      propertyPath: axePrefab
+      value: 
+      objectReference: {fileID: 114930649081813730, guid: 55aa998fc873bbd4eafdf797a26a831d,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a9b6b1bc720c174a8b52fb571a67f73, type: 2}
   m_IsPrefabParent: 0
@@ -923,6 +931,22 @@ RectTransform:
   m_AnchoredPosition: {x: -0.38, y: 0.48}
   m_SizeDelta: {x: 7.684, y: 6.347}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &882792643 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1915153723374650, guid: 8a9b6b1bc720c174a8b52fb571a67f73,
+    type: 2}
+  m_PrefabInternal: {fileID: 589548900}
+--- !u!114 &882792644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882792643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae122ee537138f42ae392e8bed18820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &883385320
 GameObject:
   m_ObjectHideFlags: 0

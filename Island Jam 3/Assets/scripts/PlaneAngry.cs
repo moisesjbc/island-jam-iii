@@ -6,6 +6,7 @@ public class PlaneAngry : MonoBehaviour {
 
 	public AngryMeter angryMeter;
 	public PlaneGenerator planeGenerator;
+	public ThrownAxe axePrefab;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +20,11 @@ public class PlaneAngry : MonoBehaviour {
 		}
 	}
 
-	void DestroyPlane () {
+	void DestroyPlane (bool usingAxe = false) {
+		if (usingAxe) {
+			ThrownAxe axe = Instantiate (axePrefab, transform.position, Quaternion.identity) as ThrownAxe;
+			axe.Activate ();
+		}
 		Destroy (gameObject);
 		angryMeter.StopMakingAngry();
 		planeGenerator.GeneratePlane ();
