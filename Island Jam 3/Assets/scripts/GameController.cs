@@ -13,17 +13,10 @@ public class GameController : MonoBehaviour {
 	}
 		
 	public void GameOver(){
-		gameOverPanel.SetActive (true);
-		Time.timeScale = 0.0f;
+		SceneManager.LoadScene("game_over_scene");
 	}
 
 	public void Restart(){
-		Time.timeScale = 1.0f;
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }
