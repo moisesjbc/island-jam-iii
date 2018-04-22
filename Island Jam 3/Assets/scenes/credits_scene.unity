@@ -248,8 +248,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Arte\n\nAlicia Warhola\nLuis Andr\xE9s Lara Zepeda\n\nM\xFAsica\nDiego
-    David D\xEDaz Mart\xEDn\n\nProgramaci\xF3n\nMois\xE9s J. Bonilla Caraballo\n"
+  m_Text: "Art\n\nAlicia Warhola\nLuis Andr\xE9s Lara Zepeda\n\nMusic\nDiego David
+    D\xEDaz Mart\xEDn\n\nProgramming\nMois\xE9s J. Bonilla Caraballo\n\nSounds adapted
+    from freesound.org"
 --- !u!222 &417455234
 CanvasRenderer:
   m_ObjectHideFlags: 0
