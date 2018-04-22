@@ -9,7 +9,6 @@ public class MusicController : MonoBehaviour {
 	public AudioClip intenseMusicClip;
 	private AudioSource calmMusic;
 	private AudioSource intenseMusic;
-	bool initialized = false;
 
 	public static MusicController instance = null;
 
@@ -17,9 +16,6 @@ public class MusicController : MonoBehaviour {
 	void Start () {
 		if (instance == null) {
 			instance = this;
-			Debug.LogWarning ("foo");
-			initialized = true;
-
 			calmMusic = gameObject.AddComponent<AudioSource> () as AudioSource;
 			intenseMusic = gameObject.AddComponent<AudioSource> () as AudioSource;
 
@@ -32,10 +28,10 @@ public class MusicController : MonoBehaviour {
 			intenseMusic.loop = true;
 			DontDestroyOnLoad (this.gameObject);
 			calmMusic.Stop ();
+			intenseMusic.Play ();
 
 			calmMusic.Play ();
 			intenseMusic.Play ();
-			intenseMusic.Stop ();
 			SetIntensity (0.0f);
 		}
 	}

@@ -18,16 +18,16 @@ public class QuickTimeEvent : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log ("actions");
-		Debug.Log (actions.Length);
 	}
 
 	void Update () {
 		if (currentAction != null) {
 			if (Input.GetKeyDown (currentKey)) {
+				GetComponent<AudioSource> ().Play ();
 				rompible.ReduceDamage (10.0f);
 				RestartQuickTimeEvents ();
 			} else if (Input.anyKeyDown) {
+				GetComponent<AudioSource> ().Play ();
 				rompible.IncreaseDamage (5.0f);
 				RestartQuickTimeEvents ();
 			}

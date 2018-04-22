@@ -17,7 +17,6 @@ public class Rompible : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GetComponent<AudioSource> ().volume = 0.5f;
 	}
 
 	void PrepareDisaster () {
