@@ -8,6 +8,8 @@ public class QuickTimeEvent : MonoBehaviour {
 
 	public FlashingAction[] actions;
 	public KeyCode[] keys;
+	public AudioClip[] clips;
+
 
 	private FlashingAction currentAction = null;
 	private KeyCode currentKey;
