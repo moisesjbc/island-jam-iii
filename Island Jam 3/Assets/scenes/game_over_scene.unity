@@ -403,7 +403,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Restart menu
+  m_Text: Restart game
 --- !u!222 &937974432
 CanvasRenderer:
   m_ObjectHideFlags: 0
