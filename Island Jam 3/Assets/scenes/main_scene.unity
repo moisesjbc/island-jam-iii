@@ -256,6 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d15bf3275a77e4e81ea2bf249bd9aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0
   damagePerSecond: 5
   damageBar: {fileID: 1005696384}
   gameController: {fileID: 1604454421}
@@ -774,8 +775,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 633221924}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.16463386}
-  m_LocalScale: {x: 0.1, y: 0.02, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.16463384}
+  m_LocalScale: {x: 0.099999994, y: 0.02, z: 1}
   m_Children:
   - {fileID: 1622630167}
   - {fileID: 1317709906}
@@ -862,6 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d15bf3275a77e4e81ea2bf249bd9aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0
   damagePerSecond: 5
   damageBar: {fileID: 1083771505}
   gameController: {fileID: 1604454421}
@@ -1693,6 +1695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2bf0a0859afbb64f8a1606739de78a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  angryValue: 0
 --- !u!1 &1395140417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,6 +1852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d15bf3275a77e4e81ea2bf249bd9aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0
   damagePerSecond: 5
   damageBar: {fileID: 984941292}
   gameController: {fileID: 1604454421}
@@ -2007,6 +2011,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5b45c41a3da61540baaf03528ac642f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rompible1: {fileID: 783128313}
+  rompible2: {fileID: 1426962845}
+  rompible3: {fileID: 139539059}
+  angryMeter: {fileID: 1317709910}
 --- !u!4 &1604454422
 Transform:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class AngryMeter : MonoBehaviour {
 
-	private float angryValue = 0.0f;
+	public float angryValue = 0.0f;
 	private float angryDelta = 0.0f;
 
 	// Use this for initialization

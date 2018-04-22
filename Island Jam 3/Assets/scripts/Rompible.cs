@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Rompible : MonoBehaviour {
-	private float damage = 0.0f;
+	public float damage = 0.0f;
 	public float damagePerSecond = 5.0f;
 
 	public DamageBar damageBar;
