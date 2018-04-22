@@ -203,13 +203,17 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3c0fc38028aa4364cace3f1cfd6f91a4, type: 3}
   - {fileID: 21300000, guid: e1199f7ac95ac1f4c866396d0fab6f51, type: 3}
   texts:
-  - "\xA1Bienvenido a Administrathor!"
-  - "\xA1Evita que cualquiera de las barras llegue al final o perder\xE1s!"
-  - "El material de oficina ir\xE1 rompi\xE9ndose con el tiempo.\nSelecciona un objeto
-    y sigue la secuencia de teclas para arreglarlo."
-  - "Pulsa A, S, D, W seg\xFAn la runa iluminada."
-  - "Algunos aviones de papel pondr\xE1n a prueba tu paciencia. \n\xA1Derr\xEDvalos
-    clicando sobre ellos!"
+  - Welcome to Administrathor!
+  - Don't let any of the damage bars reach the end or you will loose!
+  - 'Office stuff will break in time.
+
+
+    Select an object and press the keys as instructed to fix it.'
+  - Press A, S, D or W according to the iluminated rune.
+  - 'Some paper airplanes will make you angry.
+
+
+    Destroy them by clicking on them!'
   textBox: {fileID: 254775790}
 --- !u!1 &254775788
 GameObject:
