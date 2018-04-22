@@ -26,7 +26,8 @@ public class QuickTimeEvent : MonoBehaviour {
 				GetComponent<AudioSource> ().Play ();
 				rompible.ReduceDamage (10.0f);
 				RestartQuickTimeEvents ();
-			} else if (Input.anyKeyDown) {
+			} else if (Input.anyKeyDown && !Input.GetMouseButtonDown(0) && 
+				!Input.GetMouseButtonDown(1) && !Input.GetMouseButtonDown(2)) {
 				GetComponent<AudioSource> ().Play ();
 				rompible.IncreaseDamage (5.0f);
 				RestartQuickTimeEvents ();
