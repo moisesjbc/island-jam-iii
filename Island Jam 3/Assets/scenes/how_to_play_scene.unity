@@ -208,7 +208,7 @@ MonoBehaviour:
   - "El material de oficina ir\xE1 rompi\xE9ndose con el tiempo.\nSelecciona un objeto
     y sigue la secuencia de teclas para arreglarlo."
   - "Pulsa A, S, D, W seg\xFAn la runa iluminada."
-  - "Algunos aviones de papel pondr\xE1n a prueba tu paciencia. \n\n\xA1Derr\xEDvalos
+  - "Algunos aviones de papel pondr\xE1n a prueba tu paciencia. \n\xA1Derr\xEDvalos
     clicando sobre ellos!"
   textBox: {fileID: 254775790}
 --- !u!1 &254775788
@@ -241,10 +241,10 @@ RectTransform:
   m_Father: {fileID: 188307416}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -610.2, y: -337.6}
-  m_SizeDelta: {x: 761.8, y: 226.2}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 425.4, y: 151.4}
+  m_SizeDelta: {x: 715.1, y: 226.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &254775790
 MonoBehaviour:
