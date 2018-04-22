@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AngryMeter : MonoBehaviour {
 
@@ -23,10 +24,12 @@ public class AngryMeter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		angryValue += angryDelta * Time.deltaTime;
-		if (angryValue < 0.0f) {
-			angryValue = 0.0f;
+		if (SceneManager.GetActiveScene ().name == "main_scene") {
+			angryValue += angryDelta * Time.deltaTime;
+			if (angryValue < 0.0f) {
+				angryValue = 0.0f;
+			}
+			GetComponent<DamageBar> ().SetValue (angryValue);
 		}
-		GetComponent<DamageBar> ().SetValue(angryValue);
 	}
 }
