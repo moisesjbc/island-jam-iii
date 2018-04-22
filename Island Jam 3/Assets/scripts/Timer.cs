@@ -15,4 +15,8 @@ public class Timer : MonoBehaviour {
 			GetComponent <Text> ().text = minutes.ToString ("#00") + ":" + seconds.ToString ("#00");
 		}
 	}
+
+	void OnDestroy () {
+		PlayerPrefs.SetString ("time", GetComponent <Text> ().text);
+	}
 }
