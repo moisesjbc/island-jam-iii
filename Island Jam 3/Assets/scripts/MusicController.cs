@@ -32,8 +32,8 @@ public class MusicController : MonoBehaviour {
 
 			calmMusic.Play ();
 			intenseMusic.Play ();
-			SetIntensity (0.0f);
 		}
+		SetIntensity (0.0f);
 	}
 
 	public void SetIntensity (float intensity) {
