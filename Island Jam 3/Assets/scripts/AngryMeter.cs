@@ -18,7 +18,7 @@ public class AngryMeter : MonoBehaviour {
 	}
 
 	public void StopMakingAngry () {
-		angryDelta = 0.0f;
+		angryDelta = -5.0f;
 	}
 	
 	// Update is called once per frame
