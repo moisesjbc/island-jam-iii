@@ -17,6 +17,7 @@ public class Rompible : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		GetComponent<AudioSource> ().volume = 0.5f;
 	}
 
 	void PrepareDisaster () {
@@ -33,12 +34,12 @@ public class Rompible : MonoBehaviour {
 			damageBar.SetValue (damage);
 			if (damage > 100.0f) {
 				gameController.GameOver ();
-			} else if (damage < 0.0f) {
-				currentState = State.HEALTHY;
 			}
 		} else {
 			timeToBreak -= Time.deltaTime;
 			if (timeToBreak < 0.0f) {
+				GetComponent<AudioSource> ().Play ();
+				GetComponent<AudioSource> ().loop = true;
 				currentState = State.BREAKING;
 			}
 		}
@@ -48,6 +49,8 @@ public class Rompible : MonoBehaviour {
 		damage -= damageDelta;
 		if (damage < 0.0f) {
 			damage = 0.0f;
+			GetComponent<AudioSource> ().Stop ();
+			currentState = State.HEALTHY;
 		}
 	}
 

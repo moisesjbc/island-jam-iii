@@ -25,9 +25,6 @@ public class QuickTimeEventSelectable : MonoBehaviour {
 			Bounds bounds = GetComponent<SpriteRenderer> ().bounds;
 			mousePosition.z = bounds.center.z;
 
-			Debug.Log (mousePosition);
-			Debug.Log (bounds);
-
 			if (!bounds.Contains (mousePosition)) {
 				selected = false;
 				GetComponent<SpriteRenderer> ().sprite = nonSelectedSprite;
