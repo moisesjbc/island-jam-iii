@@ -7,9 +7,9 @@ public class GameController : MonoBehaviour {
 	private MusicController musicController;
 
 	void Start () {
-		musicController = GameObject.Find("MusicController").GetComponent<MusicController>();
-		Debug.Log ("musicController");
-		Debug.Log (musicController);
+		if (GameObject.Find ("MusicController") != null) {
+			musicController = GameObject.Find("MusicController").GetComponent<MusicController>();
+		}
 	}
 
 	public void GameOver(){
@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour {
 	public AngryMeter angryMeter;
 
 	void Update () {
-		if (SceneManager.GetActiveScene ().name == "main_scene") {
+		if (musicController != null && SceneManager.GetActiveScene ().name == "main_scene") {
 			float d1 = rompible1.damage;
 			float d2 = rompible2.damage;
 			float d3 = rompible3.damage;

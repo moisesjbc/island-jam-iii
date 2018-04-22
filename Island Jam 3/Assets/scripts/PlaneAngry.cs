@@ -23,7 +23,6 @@ public class PlaneAngry : MonoBehaviour {
 	void DestroyPlane (bool usingAxe = false) {
 		if (usingAxe) {
 			ThrownAxe axe = Instantiate (axePrefab, transform.position, Quaternion.identity) as ThrownAxe;
-			axe.Activate ();
 		}
 		Destroy (gameObject);
 		angryMeter.StopMakingAngry();
@@ -31,6 +30,6 @@ public class PlaneAngry : MonoBehaviour {
 	}
 
 	void OnMouseDown () {
-		DestroyPlane ();
+		DestroyPlane (true);
 	}
 }
