@@ -202,6 +202,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 42c8dd68bc3883948b482a32747c5bdc, type: 3}
   - {fileID: 21300000, guid: 3c0fc38028aa4364cace3f1cfd6f91a4, type: 3}
   - {fileID: 21300000, guid: e1199f7ac95ac1f4c866396d0fab6f51, type: 3}
+  previousPageButton: {fileID: 352556907}
+  nextPageButton: {fileID: 1030782712}
   texts:
   - Welcome to Administrathor!
   - Don't let any of the damage bars reach the end or you will loose!
@@ -306,7 +308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &352556906
 RectTransform:
   m_ObjectHideFlags: 0
