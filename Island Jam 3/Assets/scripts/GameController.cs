@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {	
 	private MusicController musicController;
+	float intensity = 0.0f;
 
 	void Start () {
 		if (GameObject.Find ("MusicController") != null) {
@@ -27,8 +28,7 @@ public class GameController : MonoBehaviour {
 			float d2 = rompible2.damage;
 			float d3 = rompible3.damage;
 			float a = angryMeter.angryValue;
-			float intensity = d1 * 0.25f + d2 * 0.25f + d3 * 0.25f + a * 0.25f;
-			Debug.Log (intensity);
+			intensity += Time.deltaTime * 2.5f;
 			musicController.SetIntensity(intensity);
 		}
 	}
