@@ -16,6 +16,10 @@ You are sit in front of your desk. Computer, printer and telephone will claim yo
 * **Mouse click**: select object to repair / throw axe at paper airplane.
 * **A, S, D, W**: repair object.
 
+## Play online
+
+[Click here to play Administrathor online](http://moisesjbc.github.io/games/administrathor/)
+
 ## Credits
 
 Made for Island Jam III (Gran Canaria)
