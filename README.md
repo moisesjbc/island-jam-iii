@@ -26,17 +26,17 @@ Made for Island Jam III (Gran Canaria)
 
 ### Art
 
-Alicia Warhola 
-Luis Andrés Lara Zepeda
+* Alicia Warhola 
+* Luis Andrés Lara Zepeda
 
 ### Music
 
-Diego David Díaz Martín
+* Diego David Díaz Martín
 
 ### Programming
 
-Moisés J. Bonilla Caraballo
+* Moisés J. Bonilla Caraballo
 
 ### Sounds
 
-Sounds adapted from freesound.org
+* Sounds adapted from <freesound.org>
